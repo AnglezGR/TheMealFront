@@ -1,0 +1,9 @@
+@import "src/scss/variables";
+
+.container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(1,30%);
+  justify-content: center;
+
+}

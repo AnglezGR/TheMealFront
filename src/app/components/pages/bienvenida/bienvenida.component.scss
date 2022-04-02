@@ -1,0 +1,22 @@
+@import "src/scss/variables";
+
+.container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(1,75%);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+}
+
+.meal-card {
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+.image-card{
+  height: 500px;
+  width: 500px;
+  margin-left: 30%
+}

@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="navbar">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/bienvenida'"> Inicio </a>
+      <a mat-button [routerLink]="'/ingredientes'"> Ingredientes populares </a>
+      <a mat-button [routerLink]="'/platillos'"> Platillos </a>
+      <span class="menu-spacer"></span>
+      <span class="menu-spacer"></span>
+      <a mat-button [routerLink]="'/perfil'"> Perfil </a>
+      <a mat-button (click)="onLogout()">
+        <mat-icon>exit_to_app</mat-icon>
+        Logout
+      </a>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

@@ -1,0 +1,7 @@
+<div class="container">
+    <mat-selection-list #ingrediente  [multiple]="false" (selectionChange)="selectIngrediente($event, ingrediente.selectedOptions.selected[0]?.value.strIngredient)">
+        <mat-list-option *ngFor="let ingrediente of data" [value]="ingrediente">
+          {{ingrediente.strIngredient}}
+        </mat-list-option>
+      </mat-selection-list>
+</div>

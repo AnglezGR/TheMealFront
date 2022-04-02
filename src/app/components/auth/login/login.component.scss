@@ -1,0 +1,27 @@
+@import "src/scss/variables";
+:host {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: $background_color;
+
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 400px;
+}
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+}
+
+.remember { 
+  padding-bottom: 35px;
+}

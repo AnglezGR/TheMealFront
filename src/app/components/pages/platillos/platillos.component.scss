@@ -1,0 +1,17 @@
+@import "src/scss/variables";
+
+.container {
+  margin-top: 25px;
+  display: grid;
+  justify-content: center;
+}
+.container-platillos {
+  grid-template-columns: repeat(4,24%);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+}
+.search{
+  min-width: 350px;
+  width: 100%;
+}

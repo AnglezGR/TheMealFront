@@ -1,0 +1,19 @@
+@import "src/scss/variables";
+
+.container {
+  margin-top: 25px;
+  display: grid;
+  justify-content: center;
+
+}
+
+mat-selection-list {
+  max-height: 85vh;
+  min-width: 400px;
+  overflow: auto;
+}
+
+.meal-card {
+
+  margin-bottom: 8px;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+    <mat-form-field class="search">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput type="search" placeholder="search meal" class="search-input" [ngModel]="searchParam" (ngModelChange)="searchFn($event)" >
+    </mat-form-field>
+
+    <div class="container-platillos">
+        <mat-card class="meal-card" *ngFor="let item of data" (click)="selectPlatillo(item)">
+            <mat-card-header>
+              <div mat-card-avatar class="card-header-image"></div>
+              <mat-card-title>{{ item.strMeal ? item.strMeal  : '' }}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="{{ item.strMealThumb ? item.strMealThumb : ''}}" alt="Photo of dish" class="image-card">
+            <mat-card-actions>
+              <!-- <button mat-button>Details</button> -->
+
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
